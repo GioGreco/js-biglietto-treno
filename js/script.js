@@ -1,3 +1,4 @@
+"use strict";
 let tripDistance = parseInt(prompt('Quanti chilometri vuoi percorrere?'));
 let passengerAge = parseInt(prompt('Quanti anni hai?'));
 const costPerKm = 0.21;
