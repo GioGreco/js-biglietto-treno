@@ -9,21 +9,18 @@ if(isNaN(passengerAge) || isNaN(tripDistance)){
 
 if(passengerAge < 18){
     let ticketPrice = ((costPerKm * tripDistance) / 100) * 80;
-    console.log(ticketPrice.toFixed(2));
     let price = `<p>Journey Price</p> € ${ticketPrice.toFixed(2)}`;
     let par3 = document.getElementById('ticket-price');
     par3.innerHTML = price;
 }
 else if(passengerAge > 65){
     let ticketPrice = ((costPerKm * tripDistance) / 100) * 60;
-    console.log(ticketPrice.toFixed(2));
     let price = `<p>Journey Price</p> € ${ticketPrice.toFixed(2)}`;
     let par3 = document.getElementById('ticket-price');
     par3.innerHTML = price;
 }
 else{
     let ticketPrice = costPerKm * tripDistance;
-    console.log(ticketPrice.toFixed(2));
     let price = `<p>Journey Price</p> € ${ticketPrice.toFixed(2)}`;
     let par3 = document.getElementById('ticket-price');
     par3.innerHTML = price;
